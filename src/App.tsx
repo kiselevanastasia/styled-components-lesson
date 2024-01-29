@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Article } from './components/Article.styled';
+import { Button } from './components/Button.styled';
+import { Card } from './components/Card.styled';
+import { Image } from './components/Image.styled';
+import { Title } from './components/Title.styled';
+import { WrappCard } from './components/WrappCard.styled';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WrappCard>
+      <Card>
+        <Image/>
+        <Title>Headline</Title>
+        <Article>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Article>
+        <Button primary >See more</Button>
+        <Button outline >Save</Button>
+      </Card>
+    </WrappCard>
   );
 }
 
