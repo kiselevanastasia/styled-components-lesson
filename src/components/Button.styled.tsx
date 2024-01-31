@@ -7,8 +7,6 @@ type ButtonPropsType = {
 }
 
 export const Button = styled.button<ButtonPropsType>`
-  position: relative;
-  top: 65px;
   left: 40px;
   height: 30px;
   width: 86px;
