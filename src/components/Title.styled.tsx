@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-//изменить на заголовок
 export const Title = styled.h1`
   top: 20px;
   left: 20px;
